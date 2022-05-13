@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<font face="Roboto" size="7" style="color:darkred"> 
+<div align="center">
+<p>Time is</p>
+<p id="Clock"></p>
+</div>
+</font>
+
+<script>
+var myVar=setInterval(function(){myTimer()},1000);
+
+function myTimer()
+{
+var d=new Date();
+var t=d.toLocaleTimeString();
+document.getElementById("Clock").innerHTML=t;
+}
+
+</script>
+
+<script type="text/javascript">
+function drawSun(){
+  // get the canvas element using the DOM
+  var canvas = document.getElementById('mycanvasS');
+
+  // Make sure we don't execute when canvas isn't supported
+  if (canvas.getContext){
+
+    // use getContext to use the canvas for drawing
+    var ctx = canvas.getContext('2d');
+
+    // Draw shapes
+    var img = new Image();
+    img.src = 'laptop.jpg';
+
+    img.onload = function(){
+       ctx.drawImage(img,40,0);
+     }
+
+  }
+  
+  }
+  
+  function drawVenus(){
+  // get the canvas element using the DOM
+  var canvas = document.getElementById('mycanvasV');
+
+  // Make sure we don't execute when canvas isn't supported
+  if (canvas.getContext){
+
+    // use getContext to use the canvas for drawing
+    var ctx = canvas.getContext('2d');
+
+    // Draw shapes
+    var img = new Image();
+    img.src = 'pc2.jpg';
+
+    img.onload = function(){
+       ctx.drawImage(img,70,0);
+     }
+
+  }   
+  
+  }
+
+</script>
+
+</head>
+  
+   <body onload="drawSun(), drawVenus()" align="center" bgproperties="fixed" style="background-image: url('5.jpg');">
+   <canvas id="mycanvasS"></canvas>
+   <canvas id="mycanvasV"></canvas>
+	 
+   <form>
+   <div align="center">
+	<!--http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video_all-->
+	<video width="540" height="360" controls autoplay>
+	<!-- http://easyhtml5video.com/-->
+  	<source src="trailer.mp4" type="video/mp4">
+ 	</video>
+	</div>   
+	</form>
+
+<font face="Roboto" size="3" color="green"> 
+<p id="p1">This is the trailer of the newest laptop!!!</p>
+</font>
+
+<input type="button" style="background-color: aquamarine;" value="Hide text" onclick="document.getElementById('p1').style.visibility='hidden'" />
+<input type="button" style="background-color: aquamarine;" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'" />
+
+<font face="Verdana" size="3" color="green" > 
+<p>Click the OK button to display a confirm box.</p>
+</font>
+
+<button 
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<font face="Roboto" size="7" style="color:darkred"> 
+<div align="center">
+<p>Time is</p>
+<p id="Clock"></p>
+</div>
+</font>
+
+<script>
+var myVar=setInterval(function(){myTimer()},1000);
+
+function myTimer()
+{
+var d=new Date();
+var t=d.toLocaleTimeString();
+document.getElementById("Clock").innerHTML=t;
+}
+
+</script>
+
+<script type="text/javascript">
+function drawSun(){
+  // get the canvas element using the DOM
+  var canvas = document.getElementById('mycanvasS');
+
+  // Make sure we don't execute when canvas isn't supported
+  if (canvas.getContext){
+
+    // use getContext to use the canvas for drawing
+    var ctx = canvas.getContext('2d');
+
+    // Draw shapes
+    var img = new Image();
+    img.src = 'laptop.jpg';
+
+    img.onload = function(){
+       ctx.drawImage(img,40,0);
+     }
+
+  }
+  
+  }
+  
+  function drawVenus(){
+  // get the canvas element using the DOM
+  var canvas = document.getElementById('mycanvasV');
+
+  // Make sure we don't execute when canvas isn't supported
+  if (canvas.getContext){
+
+    // use getContext to use the canvas for drawing
+    var ctx = canvas.getContext('2d');
+
+    // Draw shapes
+    var img = new Image();
+    img.src = 'pc2.jpg';
+
+    img.onload = function(){
+       ctx.drawImage(img,70,0);
+     }
+
+  }   
+  
+  }
+
+</script>
+
+</head>
+  
+   <body onload="drawSun(), drawVenus()" align="center" bgproperties="fixed" style="background-image: url('5.jpg');">
+   <canvas id="mycanvasS"></canvas>
+   <canvas id="mycanvasV"></canvas>
+	 
+   <form>
+   <div align="center">
+	<!--http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video_all-->
+	<video width="540" height="360" controls autoplay>
+	<!-- http://easyhtml5video.com/-->
+  	<source src="trailer.mp4" type="video/mp4">
+ 	</video>
+	</div>   
+	</form>
+
+<font face="Roboto" size="3" color="green"> 
+<p id="p1">This is the trailer of the newest laptop!!!</p>
+</font>
+
+<input type="button" style="background-color: aquamarine;" value="Hide text" onclick="document.getElementById('p1').style.visibility='hidden'" />
+<input type="button" style="background-color: aquamarine;" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'" />
+
+<font face="Verdana" size="3" color="green" > 
+<p>Click the OK button to display a confirm box.</p>
+</font>
+
+<button onclick="myFunction()">OK</button>
+
+<p id="button" style="background-color: aquamarine;"></p>
+
+<script>
+function myFunction()
+{
+var x;
+var r=confirm("Pressed the OK button!");
+if (r==true)
+  {
+  x="You pressed OK!";
+  }
+document.getElementById("button").innerHTML=x;
+}
+</script>
+
+
+<!-- example #1 -->
+<br/>
+<button onclick="myInformation()">Who are you?</button>
+<p id="demo"></p>
+
+<script>
+var person = {
+  firstName : "Arteu",
+  lastName  : "Hasanaj",
+  age     : 19,
+  eyeColor  : brown";
+};
+
+function myInformation() {
+document.getElementById("demo").innerHTML =
+person.firstName + " " + person.lastName + " and I am " + person.age + " years old.";
+}
+</script>
+
+<!-- example #2 -->
+<button style="background-color: aquamarine;" onclick="document.getElementById('myImage').src='laptop.jpg'">See Laptop</button>
+
+<img id="myImage" src="laptop.jpg" style="width:100px">
+
+<button style="background-color: aquamarine;" onclick="document.getElementById('myImage').src='pc2.jpg'">See PC</button>
+
+
+
+<!-- example #3 -->
+<br/>
+<button style="background-color: aquamarine;" onclick="window.print()">Print this page</button>
+
+<!-- example #4 -->
+<br/>
+<div>
+  <form method="get" action="http://www.google.com/search"> 
+ <input style="background-color: aquamarine;" type="text" name="q" size="31" maxlength="255" placeholder="Search..">
+ <input style="background-color: aquamarine;" type="submit" value="Google Search"> 
+  </form>
+</div>
+
+</body>
+</html>onclick="myFunction()">OK</button>
+
+<p id="button" style="background-color: aquamarine;"></p>
+
+<script>
+function myFunction()
+{
+var x;
+var r=confirm("Pressed the OK button!");
+if (r==true)
+  {
+  x="You pressed OK!";
+  }
+document.getElementById("button").innerHTML=x;
+}
+</script>
+
+
+<!-- example #1 -->
+<br/>
+<button onclick="myInformation()">Who are you?</button>
+<p id="demo"></p>
+
+<script>
+var person = {
+  firstName : "Arteu",
+  lastName  : "Hasanaj",
+  age     : 19,
+  eyeColor  : brown"
+};
+
+function myInformation() {
+document.getElementById("demo").innerHTML =
+person.firstName + " " + person.lastName + " and I am " + person.age + " years old.";
+}
+</script>
+
+<!-- example #2 -->
+<button style="background-color: aquamarine;" onclick="document.getElementById('myImage').src='laptop.jpg'">See Laptop</button>
+
+<img id="myImage" src="laptop.jpg" style="width:100px">
+
+<button style="background-color: aquamarine;" onclick="document.getElementById('myImage').src='pc2.jpg'">See PC</button>
+
+
+
+<!-- example #3 -->
+<br/>
+<button style="background-color: aquamarine;" onclick="window.print()">Print this page</button>
+
+<!-- example #4 -->
+<br/>
+<div>
+  <form method="get" action="http://www.google.com/search"> 
+ <input style="background-color: aquamarine;" type="text" name="q" size="31" maxlength="255" placeholder="Search..">
+ <input style="background-color: aquamarine;" type="submit" value="Google Search"> 
+  </form>
+</div>
+
+</body>
+</html>
